@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>First Site</title>
+
+    <style>
+
+      body {
+        margin:0;
+        background-color: lightgrey;
+      }
+
+      .icon-bar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+      }
+
+      .icon-bar a {
+        display: block;
+        text-decoration: none;
+        float: left;
+        width: 9%;
+        text-align: center;
+        padding: 12px 0;
+        transition: all 0.5s ease;
+        color: white;
+        font-size: 30px;
+        src: url(fonts\proxima bold\Proxima Nova Bold.otf);
+      }
+
+      .icon-bar a:hover {
+        background-color: #000;
+      }
+
+      .active {
+        background-color: #4CAF50;
+      }
+
+      .hero {
+        position:relative;
+        padding: 100px 100px 50px 100px;
+        text-align: center;
+      }
+
+      .hero3 {
+        display: inline-block;
+        padding: 50px 50px 50px 50px;
+        text-align: center;
+        background-color: white;
+      }
+
+      .hero4 {
+        display: inline-block;
+        padding: 50px 50px 50px 50px;
+        text-align: center;
+      }
+
+      .container {
+        margin: auto;
+        padding: 100px;
+        text-align: center;
+        width: 60%;
+      }
+
+      .logo {
+        padding: 50px 50px 50px 50px;
+      }
+
+      p {
+        padding: 10px 10px 10px 10px;
+      }
+
+            * {
+              box-sizing: border-box;
+            }
+            /* Center website */
+            .video {
+              text-align:center;
+            }
+            .main {
+              max-width: 1000px;
+              margin: auto;
+              padding: 100px 0 0 0;
+            }
+            .space{
+              padding-top: 100px;
+            }
+
+            .main2 {
+              padding-top: 50px;
+              text-align: center;
+            }
+
+            h1 {
+              font-size: 50px;
+              word-break: ;
+              text-align: center;
+            }
+
+            .row {
+              margin: 8px -16px;
+            }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+              padding: 8px;
+            }
+
+            /* Create four equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 25%;
+            }
+
+            /* Clear floats after rows */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Content */
+            .content {
+              background-color: white;
+              padding: 10px;
+            }
+
+            .content2 {
+              background-color: white;
+              padding: 30px 100px;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 900px) {
+              .column {
+                width: 50%;
+              }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+              }
+            }
+
+
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+
+            input[type=submit] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .container2 {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="icon-bar">
+      <nav>
+            <a href="about.html"> <img src="/img/A.png" alt="Company Logo" height="100" width="100"></a>
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="videos.html">Videos</a>
+            <a href="ux.html">UX/UI Work</a>
+            <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+
+  <div class="container">
+    <div class="hero">
+      <img src="img\PROFILE-PIX2.png" alt="Company Logo" height="400" width="400">
+    </div>
+
+
+    <div class="hero3">
+      <h1>Contact Form</h1>
+      <p>I am happy to hear from you</p>
+    </div>
+
+
+
+  </div>
+
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Input summary.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+<!-- END GRID -->
+
+
+
+
+<footer>
+
+  <div class="content2">
+    <a href="index.html"> <img src="/img/A.png" alt="Company Logo" height="100" width="100"></a>
+      <p><copyright>All rights reserved.</copyright>
+      <small>Copyright 2004-2019</small></p>
+      <p>All work is protected.</p>
+  </div>
+
+
+</footer>
+
+  </header>
+
+
+
+</body>
+<!--order: 3px solid green;-->
+</html>
