@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Index Page</title>
 
   <style>
+  /*
   body {margin: 0;}
 
   ul.topnav {
@@ -42,12 +43,62 @@
     height:50px;
     width:50px;
   }
+*/
+/*
+  This is an internal CSS guide
+*/
+* { margin: 0; padding: 0; }
+img { display: block; width: 100%; }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 
+}
+header, .header { position: relative; }
+.header .logo {
+  float: left;
+  width: 100px;
+}
+.header nav {
+  float: right;
+  width: 50%;
+  padding: 2% 0;
+}
+nav ul { margin: 0; padding: 0; text-align: right; font-family: 'Roboto', sans-serif; }
+nav ul li { display: inline; margin-right: 10%; }
+nav ul li a { text-decoration: none; color: #444; }
+
+.hero {
+  background-color: transparent;
+  background-image: url('img/adults-casual.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 10% 0;
+  text-align: center;
+}
   </style>
 
 </head>
 
 <body>
+  <header>
+    <div class="header clearfix">
+      <div class="logo">
+        <img src="img/A.png" alt="Company Logo" height="100" width="50">
+      </div>
+    <nav>
+      <div class="navBar">
+        <ul class="naveMenu">
+          <li><a href="sample.html">INDEX</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+<!--
 
   <ul class="topnav">
     <li><a class="active" href="#home"><img src="img/A.png" alt="Company Logo"></a></li>
@@ -55,8 +106,9 @@
     <li><a href="#contact">Contact</a></li>
     <li class="right"><a href="#about">About</a></li>
   </ul>
+-->
 
-  <div style="padding:0 16px;">
+  <div>
     <h2>Responsive Topnav Example</h2>
     <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
     <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
