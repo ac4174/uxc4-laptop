@@ -4,127 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="img/a.png" type="image/gif" sizes="16x16">
+  <title>Alberto Caicedo - About</title>
 
-  <style>
-  /*
-  body {margin: 0;}
-
-  ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    background-color: #333;
-  }
-
-  ul.topnav li {float: left;}
-
-  ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 22px;
-    text-decoration: none;
-  }
-
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-  ul.topnav li a.active {background-color: black;}
-
-  ul.topnav li.right {float: right;}
-
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
-  }
-
-  img{
-    height:50px;
-    width:50px;
-  }
-*/
-/*
-  This is an internal CSS guide
-*/
-
-
-* { margin: 0; padding: 0;}
-
-body {
-  margin:0;
-  background-color: lightgrey;
-}
-
-img { display: block; width: 100%;}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-
-}
-
-header, .header {
-  position: relative;
-  background-color: #555;
-}
-
-.header .logo {
-  float: left;
-  width: 100px;
-}
-
-.header nav {
-  float: right;
-  padding: 10px;
-  width: 70%;
-  transition: all 0.5s ease;
-}
-
-
-nav ul { padding:0 ; margin: 0; text-align: right; font-family: 'Roboto', sans-serif; }
-nav ul li { display: inline; padding: 1%; margin: 0;}
-nav ul li a { text-decoration: none; color: white;}
-nav ul li:hover {background-color: #000;}
-
-
-  </style>
 
 </head>
 
 <body>
   <header>
-    <div class="header clearfix">
-        <div class="logo">
-          <img src="img/A.png" alt="Company Logo" height="100" width="50">
+    <div>
+      <div class="header clearfix">
+          <div class="logo">
+            <img src="img/A.png" alt="Company Logo" height="100" width="100">
+          </div>
+            <nav class="navcontainer">
+                <ul class="menu">
+                  <li><a href="work.html">Works</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li><a href="ux.html">UX/UI Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      <nav>
-          <ul>
-            <li><a href="sample.html">Works</a></li>
-            <li><a href="about.html">Videos</a></li>
-            <li><a href="work.html">UX/UI Projects</a></li>
-            <li><a href="work.html">Contact</a></li>
-          </ul>
-      </nav>
       </div>
   </header>
-<!--
 
-  <ul class="topnav">
-    <li><a class="active" href="#home"><img src="img/A.png" alt="Company Logo"></a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li class="right"><a href="#about">About</a></li>
-  </ul>
--->
+  <div class="container">
+    <div class="hero" style="padding: 50px">
+      <img src="img\PROFILE-PIX2.png" alt="Company Logo" height="500" width="500">
+    </div>
 
-  <div>
-    <h2>Responsive Topnav Example</h2>
-    <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
-    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-    <h4>Resize the browser window to see the effect.</h4>
+
+    <div class="hero3" style="padding-left:350px; padding-right:350px;">
+      <h3>Who am I?</h3>
+      <p>A Visual Designer, an animator, a digital designer, a user experience designer and researcher who hungers for knowledge and creating beautiful multimedia art, design, and product with a humorous persona.
+      He is a team-player eager to collaberating with others in delievering a well-detailed and meaningful craftsmanships to his audience. Very culturally interested in the field of gaming, comic books, tv-shows,
+      animation to fantasy to sci-scifi movies. In his spare time, he creates storyboard art and concepts.</p>
+    </div>
+
+
+
   </div>
+
+
 
 </body>
 </html>

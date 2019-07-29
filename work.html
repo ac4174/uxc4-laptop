@@ -4,113 +4,214 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>First Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize2.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/a.png" type="image/gif" sizes="16x16">
+  <title>Alberto Caicedo - Works</title>
 
   <style>
-      body {
-        margin:0;
-        background-color: lightgrey;
-      }
           * {
             box-sizing: border-box;
           }
+
+          h1 {
+            font-size: 50px;
+            color:white;
+            text-align: center;
+          }
+
+          p{
+          text-align: center;
+          }
+
+          h2{
+          text-align: center;
+          color:white;
+          }
+
           /* Center website */
           .main {
             max-width: 1000px;
             margin: auto;
             padding: 100px 0 0 0;
           }
+
           h1 {
             font-size: 50px;
             word-break: break-all;
             text-align: center;
           }
+
           .row {
             margin: 8px -16px;
           }
+
           /* Add padding BETWEEN each column */
           .row,
           .row > .column {
             padding: 8px;
           }
+
           /* Create four equal columns that floats next to each other */
           .column {
             float: left;
             width: 25%;
           }
+
           /* Clear floats after rows */
           .row:after {
             content: "";
             display: table;
             clear: both;
           }
+
           /* Content */
           .content {
             background-color: white;
             padding: 10px;
           }
+
           /* Responsive layout - makes a two column-layout instead of four columns */
           @media screen and (max-width: 900px) {
             .column {
               width: 50%;
             }
           }
+
           /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
           @media screen and (max-width: 600px) {
             .column {
               width: 100%;
             }
           }
-      .icon-bar {
-        width: 100%;
-        background-color: #555;
-        overflow: auto;
-      }
-      .icon-bar a {
-        display: block;
-        text-decoration: none;
-        float: left;
-        width: 9%;
-        text-align: center;
-        padding: 12px 0;
-        transition: all 0.5s ease;
-        color: white;
-        font-size: 30px;
-        src: url(fonts\proxima bold\Proxima Nova Bold.otf);
-      }
-      .icon-bar a:hover {
-        background-color: #000;
-      }
-      .active {
-        background-color: #4CAF50;
-      }
+
+
       .hero {
         position:relative;
         padding: 100px 100px 50px 100px;
         text-align: center;
       }
+
       .content2 {
         background-color: white;
         padding: 30px 100px;
       }
+
+      .container{
+        width:1000px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container .card {
+        position: relative;
+      }
+
+      .container .card .face{
+        width:300px;
+        height:200px;
+        transition: 0.5s;
+      }
+
+      .container .card .face.face1{
+        position: relative;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+      }
+
+      .container .card:hover .face.face1{
+        background: #ff0057;
+        transform: translateY(0);
+      }
+
+      .container .card .face.face1 .content{
+        opacity: 0.2;
+        transition: 0.5s;
+      }
+
+      .container .card:hover .face.face1 .content{
+        opacity: 1;
+      }
+
+      .container .card .face.face1 .content img{
+        max-width: 100px;
+        margin: 0 50px 0;
+      }
+
+      .container .card .face.face1 .content h3{
+        margin:10px 0 0;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .container .card .face.face2{
+          position: relative;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          box-sizing: border-box;
+          box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8s);
+          transform: translateY(-100px);
+      }
+
+      .container .card:hover .face.face2{
+          transform: translateY(0);
+      }
+
+        .container .card .face.face2 .content p{
+          margin:0;
+          padding: 0;
+        }
+
+        .container .card .face.face2 .content a{
+          margin:20px 80px 0;
+          display: inline-block;
+          text-decoration: none;
+          font-weight: 900;
+          color: #333;
+          padding: 5px;
+          border: 1px solid #333;
+        }
+
+        .container .card .face.face2 .content a:hover{
+          background: #333;
+          color:#fff;
+        }
+
+
     </style>
 
-  <title>Document</title>
 </head>
+
 <body>
 
   <header>
-    <div class="icon-bar">
-      <nav>
-            <a href="about.html"> <img src="/img/A.png" alt="Company Logo" height="100" width="100"></a>
-            <a href="about.html">About</a>
-            <a href="work.html">Work</a>
-            <a href="videos.html">Videos</a>
-            <a href="ux.html">UX/UI Work</a>
-            <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+    <div>
+      <div class="header clearfix">
+          <div class="logo">
+            <a href="index.html"><img src="img/A.png" alt="Company Logo" height="100" width="100"></a>
+          </div>
+            <nav class="navcontainer">
+                <ul class="menu">
+                  <li><a href="work.html">Works</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li><a href="ux.html">UX/UI Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+  </header>
 
 
 
@@ -128,31 +229,32 @@
         <div class="content">
           <img src="/img/personalworks/Deathawaits2.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/comic.png" alt="Lights" style="width:100%">
             <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/ail.png" alt="Nature" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/lp.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
     <!-- END GRID -->
+
     </div>
 
     <div class="row">
@@ -160,31 +262,33 @@
         <div class="content">
           <img src="/img/personalworks/pvv.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/sp.png" alt="Lights" style="width:100%">
             <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/tp.png" alt="Nature" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/rtl.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
+
     <!-- END GRID -->
+
     </div>
 
     <div class="row">
@@ -192,31 +296,33 @@
         <div class="content">
           <img src="/img/personalworks/evo.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/kipp.jpg" alt="Lights" style="width:100%">
             <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/gods.jpg" alt="Nature" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/groovy.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
+
     <!-- END GRID -->
+
     </div>
 
     <div class="row">
@@ -224,31 +330,33 @@
         <div class="content">
           <img src="/img/personalworks/odr.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/po1.png" alt="Lights" style="width:100%">
             <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/q.png" alt="Nature" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/scher.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
+
     <!-- END GRID -->
+
     </div>
 
     <div class="row">
@@ -256,14 +364,14 @@
         <div class="content">
           <img src="/img/personalworks/shirt.png" alt="Mountains" style="width:100%">
           <h3>My Work</h3>
-          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
       <div class="column">
         <div class="content">
           <img src="/img/personalworks/ms.jpg" alt="Lights" style="width:100%">
             <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <p2>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p2>
         </div>
       </div>
     </div>
@@ -271,7 +379,114 @@
 
     <!-- END GRID -->
 
+    <div>
+      <div class="container">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/creativity.png" alt="A logo">
+              <h3>Art Portfolios</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/video.png" alt="A logo">
+              <h3>Video Archives</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/ux.png" alt="A logo">
+              <h3>UX/UI Projects</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/creativity.png" alt="A logo">
+              <h3>Art Portfolios</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/video.png" alt="A logo">
+              <h3>Video Archives</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="img3/ux.png" alt="A logo">
+              <h3>UX/UI Projects</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>Lorem Inadlfnalnlk nklf alklsdkf lkflkjlkaf jkjf sadlksjd lkjsf lkjfla j
+              fdanldsa lkflk salf kjlksfd ajlksdaj flksdf kjf alkjdflsk jlfka jlkfd
+              akfjkdsjfk</p>
+              <a href="#">Explore here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
     <footer>
@@ -285,8 +500,6 @@
 
 
     </footer>
-
-  </header>
 
 </body>
 </html>
