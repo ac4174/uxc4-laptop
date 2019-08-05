@@ -2,6 +2,16 @@
 @import url("https://use.typekit.net/oqd2xyi.css");
 
 /* font-family: 'Saira Stencil One', cursive; */
+
+.content h3 {
+   font-family: 'Saira Stencil One', cursive;
+}
+
+.content p {
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+}
+
 .whoami h2 {
    font-family: 'Saira Stencil One', cursive;
 }
@@ -158,7 +168,7 @@ font-style: italic;
   background: #555;
 }
 .logo { float: left; width: 30%; }
-.navcontainer { float: right; width: 48%; }
+.navcontainer { float: right; width: 40%; }
 .menu {
   list-style: none;
   margin: 0;
@@ -188,7 +198,7 @@ font-style: italic;
 }
 /* Medium screens */
 
-@media all and (max-width: 1800px) {
+@media all and (max-width: 1920px) {
   .menu {
     /* When on medium sized screens, we center it by evenly distributing empty space around items */
     justify-content: space-around;

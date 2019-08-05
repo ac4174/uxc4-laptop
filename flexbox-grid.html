@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8;ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Flexbox, Grid and A11y</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header" role="banner">
+      <div class="logo" role="img"><img src="img/B.png" alt="b Logo" height="100px" width="100px"></div>
+      <nav role="nav">
+        <menu></menu>
+      </nav>
+    </header>
+    <main class="main" role="main">
+      <div id="main" class="content">
+        <table role="grid" border="1">
+          <tr>
+            <td>Table Alpha</td>
+            <td>Table Bravo</td>
+            <td>Table Charlie</td>
+          </tr>
+        </table>
+        <div class="flexbox">
+          <div class="flex-item">Heavy</div>
+          <div class="flex-item">Long-range</div>
+          <div class="flex-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.</p></div>
+        </div>
+        <div class="grid" role="grid">
+          <div class="grid-item" role="gridcell">Rescue civilians</div>
+          <div class="grid-item" role="gridcell">Sabatoge enemy weapns</div>
+          <div class="grid-item" role="gridcell">Capture Point</div>
+          <div class="grid-item" role="gridcell">Rescue civilians</div>
+          <div class="grid-item" role="gridcell">Sabatoge enemy weapns</div>
+          <div class="grid-item" role="gridcell">Capture Point</div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" role="contentinfo"></footer>
+  </div>
+</body>
+</html>

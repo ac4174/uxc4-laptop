@@ -1,0 +1,40 @@
+body{
+  margin:0;
+  padding:0;
+  min-height: 100vh;
+  background: #333;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: proxima;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  background: #333;
+}
+.human-heart {
+  margin: 5em;
+  animation: .8s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
