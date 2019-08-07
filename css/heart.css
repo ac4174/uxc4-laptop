@@ -1,4 +1,4 @@
-body{
+.site{
   margin:0;
   padding:0;
   min-height: 100vh;
@@ -7,16 +7,39 @@ body{
   justify-content: center;
   align-items: center;
   font-family: proxima;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+  animation: mymove 5s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.container {
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  0% {z-index: 5; opacity: 1;}
+  50% {z-index: 5; opacity: 1;}
+  100% {z-index: -1; opacity: 0;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {z-index: 5; opacity: 1;}
+  50% {z-index: 5; opacity: 1;}
+  100% {z-index: 5; opacity: 0;}
+}
+
+.container5 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   background: #333;
 }
-.human-heart {
+.container5 .human-heart {
   margin: 5em;
   animation: .8s infinite beatHeart;
 }

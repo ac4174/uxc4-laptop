@@ -35,7 +35,7 @@ font-family: acumin-pro, sans-serif;
 /* Center website */
 .main2{
 max-width: 510px;
-margin-right: 100px;
+margin-right: 160px;
 margin-top: 0px;
 }
 
@@ -148,9 +148,10 @@ table {
   justify-content: space-between;
   outline: 1px solid red;
 }
+
 .flexbox .flex-item {
   width: 48%;
-  background-color: yellow;
+  background-color: black;
   outline: 1px solid green;
 }
 ​
