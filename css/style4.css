@@ -2,7 +2,7 @@
   margin:auto;
   /* padding:0; */
   background: #333;
-  display:flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   font-family: proxima;
@@ -11,7 +11,7 @@
 .container3{
   width:1200px;
   position: relative;
-  display: flex;
+  display: grid;
   justify-content: space-between;
 }
 
@@ -97,3 +97,8 @@
     background: #333;
     color:#fff;
   }
+}
+
+.grid{
+  display: grid;
+}
