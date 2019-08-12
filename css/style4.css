@@ -2,9 +2,7 @@
   margin:auto;
   /* padding:0; */
   background: #333;
-  display: grid;
   justify-content: center;
-  align-items: center;
   font-family: proxima;
 }
 
@@ -12,6 +10,8 @@
   width:1200px;
   position: relative;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
   justify-content: space-between;
 }
 
@@ -98,7 +98,7 @@
     color:#fff;
   }
 }
-
-.grid{
-  display: grid;
-}
+/*
+ .grid{
+  grid-column: auto;
+} */
