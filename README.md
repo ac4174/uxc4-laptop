@@ -1,5 +1,5 @@
 # Alberto Caicedo
-## Welcome to my coded website page.
+Welcome to my coded website page.
 ## Files
 index.html
 
