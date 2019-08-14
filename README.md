@@ -1,7 +1,6 @@
 # Alberto Caicedo
-Welcome to my coded website page.
 ## Files
-index.html
+Welcome to my coded website page: index.html
 
 ###### XD file
 The coded website is derived from the Adobe XD version of my portfolio website.
