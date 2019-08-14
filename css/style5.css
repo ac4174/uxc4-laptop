@@ -347,7 +347,7 @@ h1 {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
   .navcontainer{
     float: right;
     width: 68%;
@@ -448,11 +448,13 @@ h1 {
     }
 }
 
+
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 990px) {
   .navcontainer{
     float: right;
-    width: 54%;
+    width: 60%;
   }
   .column {
     width: 100%;
