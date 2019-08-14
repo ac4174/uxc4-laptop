@@ -6,361 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style4.css">
+  <link rel="stylesheet" href="css/style5.css">
   <link rel="stylesheet" href="css/normalize2.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/heart.css">
   <link rel="icon" href="img/a.png" type="image/gif" sizes="16x16">
   <title>Alberto Caicedo - Works</title>
 
-  <style>
-          * {
-            box-sizing: border-box;
-          }
 
-          h1 {
-            font-size: 50px;
-            color:white;
-            text-align: center;
-          }
-
-          p{
-          text-align: center;
-          }
-
-          h2{
-          text-align: center;
-          color:white;
-          }
-
-          /* Center website */
-          .main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 100px 0 0 0;
-          }
-
-          h1 {
-            font-size: 50px;
-            word-break: break-all;
-            text-align: center;
-          }
-
-          /* Responsive layout - makes a two column-layout instead of four columns */
-          @media screen and (max-width: 1050px) {
-            .column {
-              width: 50%;
-            }
-
-            .container3{
-              width:940px;
-              position: relative;
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              grid-gap: 1em;
-              justify-content: space-between;
-            }
-
-            .container3 .card {
-              position: relative;
-            }
-
-            .container3 .card .face{
-              width:300px;
-              height:200px;
-              transition: 0.5s;
-            }
-
-            .container3 .card .face.face1{
-              position: relative;
-              background: #333;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 1;
-              transform: translateY(100px);
-            }
-
-            .container3 .card:hover .face.face1{
-              background: #ff0057;
-              transform: translateY(0);
-            }
-
-            .container3 .card .face.face1 .content{
-              opacity: 0.2;
-              transition: 0.5s;
-            }
-
-            .container3 .card:hover .face.face1 .content{
-              opacity: 1;
-            }
-
-            .container3 .card .face.face1 .content img{
-              max-width: 100px;
-              margin: 0 50px 0;
-            }
-
-            .container3 .card .face.face1 .content h3{
-              margin:10px 0 0;
-              padding: 0;
-              color: #fff;
-              text-align: center;
-              font-size: 1.5em;
-            }
-
-            .container3 .card .face.face2{
-                position: relative;
-                background: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 20px;
-                box-sizing: border-box;
-                box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8s);
-                transform: translateY(-100px);
-            }
-
-            .container3 .card:hover .face.face2{
-                transform: translateY(0);
-            }
-
-            .container3 .card .face.face2 .content p{
-                margin:0;
-                padding: 0;
-              }
-
-            .container3 .card .face.face2 .content a{
-                margin:20px 80px 0;
-                display: inline-block;
-                text-decoration: none;
-                font-weight: 900;
-                color: #333;
-                padding: 5px;
-                border: 1px solid #333;
-              }
-
-            .container3 .card .face.face2 .content a:hover{
-                background: #333;
-                color:#fff;
-              }
-          }
-
-
-          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 750px) {
-            .column {
-              width: 100%;
-            }
-            .container3{
-              width:690px;
-              position: relative;
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              grid-gap: 1em;
-              justify-content: space-between;
-            }
-
-            .container3 .card {
-              position: relative;
-            }
-
-            .container3 .card .face{
-              width:300px;
-              height:200px;
-              transition: 0.5s;
-            }
-
-            .container3 .card .face.face1{
-              position: relative;
-              background: #333;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 1;
-              transform: translateY(100px);
-            }
-
-            .container3 .card:hover .face.face1{
-              background: #ff0057;
-              transform: translateY(0);
-            }
-
-            .container3 .card .face.face1 .content{
-              opacity: 0.2;
-              transition: 0.5s;
-            }
-
-            .container3 .card:hover .face.face1 .content{
-              opacity: 1;
-            }
-
-            .container3 .card .face.face1 .content img{
-              max-width: 100px;
-              margin: 0 50px 0;
-            }
-
-            .container3 .card .face.face1 .content h3{
-              margin:10px 0 0;
-              padding: 0;
-              color: #fff;
-              text-align: center;
-              font-size: 1.5em;
-            }
-
-            .container3 .card .face.face2{
-                position: relative;
-                background: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 20px;
-                box-sizing: border-box;
-                box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8s);
-                transform: translateY(-100px);
-            }
-
-            .container3 .card:hover .face.face2{
-                transform: translateY(0);
-            }
-
-            .container3 .card .face.face2 .content p{
-                margin:0;
-                padding: 0;
-              }
-
-            .container3 .card .face.face2 .content a{
-                margin:20px 80px 0;
-                display: inline-block;
-                text-decoration: none;
-                font-weight: 900;
-                color: #333;
-                padding: 5px;
-                border: 1px solid #333;
-              }
-
-            .container3 .card .face.face2 .content a:hover{
-                background: #333;
-                color:#fff;
-              }
-          }
-
-          /* Responsive layout - makes a two column-layout instead of four columns */
-          @media screen and (max-width: 500px) {
-            .column {
-              width: 50%;
-            }
-
-            .container3{
-              width:330px;
-              position: relative;
-              display: grid;
-              grid-template-columns: repeat(1, 1fr);
-              grid-gap: 1em;
-              justify-content: space-between;
-            }
-
-            .container3 .card {
-              position: relative;
-            }
-
-            .container3 .card .face{
-              width:300px;
-              height:200px;
-              transition: 0.5s;
-            }
-
-            .container3 .card .face.face1{
-              position: relative;
-              background: #333;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 1;
-              transform: translateY(100px);
-            }
-
-            .container3 .card:hover .face.face1{
-              background: #ff0057;
-              transform: translateY(0);
-            }
-
-            .container3 .card .face.face1 .content{
-              opacity: 0.2;
-              transition: 0.5s;
-            }
-
-            .container3 .card:hover .face.face1 .content{
-              opacity: 1;
-            }
-
-            .container3 .card .face.face1 .content img{
-              max-width: 100px;
-              margin: 0 50px 0;
-            }
-
-            .container3 .card .face.face1 .content h3{
-              margin:10px 0 0;
-              padding: 0;
-              color: #fff;
-              text-align: center;
-              font-size: 1.5em;
-            }
-
-            .container3 .card .face.face2{
-                position: relative;
-                background: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 20px;
-                box-sizing: border-box;
-                box-shadow: 0 20px 50px rgba(255, 0, 0, 0.8s);
-                transform: translateY(-100px);
-            }
-
-            .container3 .card:hover .face.face2{
-                transform: translateY(0);
-            }
-
-            .container3 .card .face.face2 .content p{
-                margin:0;
-                padding: 0;
-              }
-
-            .container3 .card .face.face2 .content a{
-                margin:20px 80px 0;
-                display: inline-block;
-                text-decoration: none;
-                font-weight: 900;
-                color: #333;
-                padding: 5px;
-                border: 1px solid #333;
-              }
-
-            .container3 .card .face.face2 .content a:hover{
-                background: #333;
-                color:#fff;
-              }
-          }
-
-
-      .hero {
-        position:relative;
-        padding: 100px 100px 50px 100px;
-        text-align: center;
-      }
-
-      .content2 {
-        background-color: white;
-        padding: 30px 100px;
-      }
-
-
-
-    </style>
 
 </head>
 
 <body>
+
+  <!-- put div render.html and in the link put css/heart.css -->
+  <div class="site">
+    <div class="container5">
+      <img src="img/A.png" alt="Company Logo" class="human-heart" alt="A heart" height="300px" width="300px">
+    </div>
+      <audio>
+        <source src="audio/heartbeating.wav" autplay="autoplay" loop="loop" preload="auto" controls>
+      </audio>
+  </div>
 
   <header>
     <div>
@@ -403,7 +71,7 @@
           <div class="face face2">
             <div class="content">
               <p>A public-awareness poster dealing with the dangers of smoking.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork1.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -418,7 +86,7 @@
           <div class="face face2">
             <div class="content">
               <p>A self awareness poster highlighing the dangers of cellular distrations.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork2.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -433,7 +101,7 @@
           <div class="face face2">
             <div class="content">
               <p>The reality where colors are rare sight to see and behold.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork3.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -448,7 +116,7 @@
           <div class="face face2">
             <div class="content">
               <p>A rockband poster based on my favorite band: Linkin Park</p>
-              <a href="#">Explore here</a>
+              <a href="artwork4.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -463,7 +131,7 @@
           <div class="face face2">
             <div class="content">
               <p>A travel poster for grasp audience to visit one of the best wonders of Ecuador.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork5.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -478,7 +146,7 @@
           <div class="face face2">
             <div class="content">
               <p>A comical short based on literal puns taken into acount.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork7.html">Explore here</a>
             </div>
           </div>
         </div>
@@ -523,7 +191,7 @@
           <div class="face face2">
             <div class="content">
               <p>A typographic redesign poster featuring science-fiction ambiance of cyberspace and the internet.</p>
-              <a href="#">Explore here</a>
+              <a href="artwork6.html">Explore here</a>
             </div>
           </div>
         </div>
